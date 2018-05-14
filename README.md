@@ -2,11 +2,11 @@
 
 # Controls
 
-W is forward
+W is forward,
 S is Backwards
 
-A is left
+A is left,
 D is right
 
-Space bar is up
+Space bar is up,
 CTRL is down
