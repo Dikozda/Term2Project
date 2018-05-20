@@ -29,4 +29,6 @@ public:
 	UPROPERTY(BlueprintReadWrite, EditAnywhere)
 		UStaticMeshComponent* ShipMesh;
 	
+	UPROPERTY(BlueprintReadWrite, EditAnywhere)
+		float Health;
 };
