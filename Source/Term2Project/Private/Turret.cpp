@@ -1,6 +1,7 @@
 // Fill out your copyright notice in the Description page of Project Settings.
 
 #include "Turret.h"
+#include "Kismet/GameplayStatics.h"
 
 
 // Sets default values
@@ -25,12 +26,33 @@ void ATurret::BeginPlay()
 {
 	Super::BeginPlay();
 	
+	//this gets the player pawn and saves it to a varible
+	Ref = UGameplayStatics::GetPlayerPawn(GetWorld(), 0);
 }
 
 // Called every frame
+
 void ATurret::Tick(float DeltaTime)
 {
+	
 	Super::Tick(DeltaTime);
+}
+/*
+void ATurret::turretRot()
+{
+	1 + 1;
+}
+*/
+void ATurret::checkRange(float & inputRange)
+{
+	inputRange = inputRange + 1;
 
 }
-
+/*
+FString ATurret::shootAtPlayer(FString word1, FString Word2)
+{
+	
+	cout << word1;
+	return word1;
+}
+*/
